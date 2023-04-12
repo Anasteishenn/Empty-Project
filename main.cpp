@@ -2,20 +2,20 @@
 #include "point.h"
 
 int main() {
-	Point p1;
-	Point p2;
+	Point p1(1, 1);
+	Point p2(2, 5);
 
 	cout << p1.info() << endl;
 	cout << p2.info() << endl;
 
+	Point p3 = p1.sum(p2);			
+	cout << p3.info() << endl;
 
+	p3 = p1.sub(p2);				
+	cout << p3.info() << endl;
 
-	/*int n = 10;
-	int m = 20;
-	int result = n + m;*/
+	p3 = p1.mul(3);					
+	cout << p3.info() << endl;
 
-	/*string s1 = "Max";
-	string s2 = " is fool!";
-	string s = s1 + s2;*/
 	return 0;
 }
